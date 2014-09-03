@@ -1,0 +1,5 @@
+{ 
+	"WEB_SERVER": "nginx",
+	"PHP_VM": "hhvm",
+	"PHP_EXTENSIONS": [ "mysqli", "bz2", "zlib", "curl", "mcrypt", "openssl" ]
+}
