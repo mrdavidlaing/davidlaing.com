@@ -10,13 +10,6 @@
 	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><![endif]-->
 	<title><?php wp_title(' | ', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 	<meta name="viewport" content="width=device-width">
-    <?php if (of_get_option('meta') == '1'){?>
-    	<meta name="keywords" content="<?php echo of_get_option('metakeywords'); ?>" />
-    	<meta name="description" content="<?php echo of_get_option('metadescription'); ?>" />
-    <?php }else {?>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
-    <?php }?>
 	<!-- stylesheet -->
 	<link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_url'); ?>"/>
 	<!-- stylesheet -->
