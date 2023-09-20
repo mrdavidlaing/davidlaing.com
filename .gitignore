@@ -1,0 +1,13 @@
+# Hugo
+public/
+resources/
+
+# Mac
+.DS_Store
+
+# Node
+node_modules/
+dist/
+
+#Misc
+tmp/
