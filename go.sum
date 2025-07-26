@@ -1,2 +1,6 @@
-github.com/jpanther/congo/v2 v2.6.1 h1:iA8uosVsiMl3JbBSBwMvrxEibzBcDp+RIj18f/cmlDs=
-github.com/jpanther/congo/v2 v2.6.1/go.mod h1:1S7DRoO1ZYS4YUdFd1LjTkdyjQwsjFWd8TqSfz3Jd+M=
+github.com/jpanther/congo/v2 v2.12.2 h1:dr7oI/as+g+FJ6zVLZ3LSVOSRlsJjSsvTO6YP4zbOsQ=
+github.com/jpanther/congo/v2 v2.12.2/go.mod h1:1S7DRoO1ZYS4YUdFd1LjTkdyjQwsjFWd8TqSfz3Jd+M=
+github.com/panr/hugo-theme-terminal/v4 v4.2.0 h1:6u0FG+PfVd5U6rnYtxdyhs5cpYQyQ0JXCxoqEUDLruM=
+github.com/panr/hugo-theme-terminal/v4 v4.2.0/go.mod h1:l2jnPOo5rIlr3H+FQBi49D6MbEojZJ+DAHDIlwOFOhQ=
+github.com/panr/hugo-theme-terminal/v4 v4.2.3 h1:BU4x0qPDTZao6kzT4hWrOwGVaYgo5GesQZr+ATMsQoM=
+github.com/panr/hugo-theme-terminal/v4 v4.2.3/go.mod h1:W0sFodm5ipL5gjRqOFjg4zD+euoQ8hCtyDDtqSpihxM=

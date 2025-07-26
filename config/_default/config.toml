@@ -1,13 +1,30 @@
-# -- Site Configuration --
-# Refer to the theme docs for more details about each of these parameters.
-# https://jpanther.github.io/congo/docs/getting-started/
-
 baseURL = 'https://davidlaing.com/'
 defaultContentLanguage = "en"
+title = "mrdavidlaing@🌍:~$"
+copyright = "© 1996-2025 David Laing"
+
+# SEO and structured data for LLMs
+[params]
+description = "David Laing - Senior Staff Data/Reliability Engineer specializing in platform SRE and data pipeline engineering"
+keywords = ["SRE", "Site Reliability Engineering", "Data Engineering", "Platform Engineering", "Staff Engineer", "David Laing"]
+author = "David Laing"
 
 enableRobotsTXT = true
-paginate = 10
-summaryLength = 0
+summaryLength = 70
+
+[pagination]
+pagerSize = 5
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
+page = ["HTML"]
+section = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/panr/hugo-theme-terminal/v4"

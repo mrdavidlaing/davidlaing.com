@@ -1,77 +1,82 @@
-# -- Theme Options --
-# These options control how the theme functions and allow you to
-# customise the display of your website.
-#
-# Refer to the theme docs for more details about each of these parameters.
-# https://jpanther.github.io/congo/docs/configuration/#theme-parameters
+# -- Terminal Theme Parameters --
+# https://github.com/panr/hugo-theme-terminal
 
-colorScheme = "fire"
-defaultAppearance = "light" # valid options: light or dark
-autoSwitchAppearance = true
+# dir name of your main content (default is `content/posts`)
+contentTypeName = "posts"
 
-enableSearch = false
-enableCodeCopy = false
-enableImageLazyLoading = true
+# ["orange", "blue", "red", "green", "pink"]
+themeColor = "blue"
 
-# robots = ""
-fingerprintAlgorithm = "sha256"
+# if you set this to 0, only submenu trigger will be visible
+showMenuItems = 0
 
-[header]
-layout = "basic" # valid options: basic, hamburger, hybrid, custom
-# logo = "img/logo.jpg"
-# logoDark = "img/dark-logo.jpg"
-showTitle = true
+# show selector to switch language
+showLanguageSelector = false
 
-[footer]
-showCopyright = true
-showThemeAttribution = true
-showAppearanceSwitcher = false
-showScrollToTop = true
+# set theme to full screen width
+fullWidthTheme = true
 
-[homepage]
-layout = "profile" # valid options: page, profile, custom
-showRecent = false
-recentLimit = 5
+# center theme with default width
+centerTheme = false
 
-[article]
-showDate = true
-showDateUpdated = false
-showAuthor = true
-showBreadcrumbs = false
-showDraftLabel = true
-showEdit = false
-# editURL = "https://github.com/username/repo/"
-editAppendPath = true
-showHeadingAnchors = true
-showPagination = true
-invertPagination = false
-showReadingTime = true
-showTableOfContents = false
-showTaxonomies = false
-showWordCount = false
-showComments = false
-# sharingLinks = ["facebook", "twitter", "mastodon", "pinterest", "reddit", "linkedin", "email"]
+# if your resource directory contains an image called `cover.(jpg|png|webp)`,
+# then the file will be used as a cover automatically.
+# With this option you don't have to put the `cover` param in a front-matter.
+autoCover = true
 
-[list]
-showBreadcrumbs = false
-showSummary = false
-showTableOfContents = false
-showTaxonomies = false
-groupByYear = true
-paginationWidth = 1
+# set post to show the last updated
+# If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+showLastUpdated = false
 
-[sitemap]
-excludedKinds = ["taxonomy", "term"]
+# set a custom favicon (default is a `themeColor` square)
+# favicon = "favicon.ico"
 
-[taxonomy]
-showTermCount = true
+# Custom CSS - Terminal theme uses static/style.css automatically
 
-[fathomAnalytics]
-# site = "ABC12345"
-# domain = "llama.yoursite.com"
+# Site copyright
+copyright = "© 1996-2025 David Laing"
 
-[verification]
-# google = ""
-# bing = ""
-# pinterest = ""
-# yandex = ""
+# Logo configuration (try at top level)
+[logo]
+logoText = "mrdavidlaing@🌍:~$"
+logoHomeLink = "/"
+
+# Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+# updatedDatePrefix = "Updated"
+
+[params.twitter]
+# set Twitter handles for Twitter cards
+# see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+# do not include @
+creator = ""
+site = ""
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "mrdavidlaing@🌍:~$"
+    subtitle = "Staff Developer & Full Stack Engineer"
+    owner = ""
+    keywords = ""
+    copyright = "ⓒ 1996-2025 David Laing"
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
+
+    [languages.en.params.logo]
+      logoText = "mrdavidlaing@🌍:~$"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "about"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "cv"
+        name = "cv"
+        url = "/cv"

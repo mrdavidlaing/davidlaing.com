@@ -1,0 +1,279 @@
+$schema: "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json"
+
+basics:
+  name: "David Laing"
+  label: "Senior Staff Data/Reliability Engineer"
+  image: ""
+  email: ""
+  phone: ""
+  url: ""
+  summary: "Iterative problem solver & team leader specializing in data reliability engineering and platform SRE. Experienced in building SRE practices, data pipeline engineering, and leading cross-functional teams across global R&D organizations."
+  location:
+    address: ""
+    postalCode: ""
+    city: "Dublin"
+    countryCode: "IE"
+    region: "Munster"
+  profiles:
+    - network: "GitHub"
+      username: "mrdavidlaing"
+      url: "https://github.com/mrdavidlaing"
+    - network: "LinkedIn"
+      username: "mrdavidlaing"
+      url: "https://linkedin.com/in/mrdavidlaing"
+
+work:
+  - company: "Shopify Ltd"
+    position: "Senior Staff Reliability Engineer"
+    url: ""
+    startDate: "2022-05"
+    endDate: ""
+    summary: "Joined to launch Data Reliability Practice for Shopify's Data Platform (PySpark, Trino, GCS). Following platform deprecation, transferred to central SRE team responsible for 'keeping commerce flowing' for 3 million merchants."
+    highlights:
+      - "Maintained platform reliability during peak traffic of $3.5M/minute during BFCM"
+      - "Led data reliability engineering practices for large-scale data lake infrastructure"
+      - "Transitioned from data platform to core commerce SRE during strategic platform migration"
+
+  - company: "VMware Ltd"
+    position: "Staff 2 Software Engineer (Data)"
+    url: ""
+    startDate: "2020-05"
+    endDate: "2022-04"
+    summary: "R&D Portfolio Insights team member focused on telemetry gathering, data curation via dagster.io pipelines, and providing data-driven insights to business unit leadership."
+    highlights:
+      - "Built and maintained dagster.io data pipelines for R&D portfolio analytics"
+      - "Curated usage datasets from telemetry across VMware's product portfolio"
+      - "Delivered data-driven insights to support strategic business decisions"
+
+  - company: "Pivotal Software Ltd"
+    position: "Director of Engineering/SRE"
+    url: ""
+    startDate: "2015-12"
+    endDate: "2020-04"
+    summary: "Engineering Lead for portfolio of initiatives across 6 global R&D offices. Built SRE team and led company-wide efforts to reduce version gap between customer deployments and current releases."
+    highlights:
+      - "Led programme balanced leadership team driving outcomes across ~80 R&D teams"
+      - "Built SRE team to dogfood Cloud Foundry and Kubernetes platforms"
+      - "Hosted pivotaltracker.com (1M users) and UK Comic/Sports Relief donation sites (£1B+ donations)"
+      - "Developed data-driven understanding of enterprise customer upgrade challenges"
+      - "Managed cross-office portfolio of teams and policy initiatives"
+
+  - company: "StayUp.io Ltd"
+    position: "Co-founder"
+    url: ""
+    startDate: "2015-03"
+    endDate: "2015-12"
+    summary: "Co-founded company creating log search solutions. Acquired by Pivotal after 7 months to form basis of PCF Log Search product."
+    highlights:
+      - "Created open-source ELK distribution (cloudfoundry-community/logsearch)"
+      - "Successfully acquired by Pivotal to enhance their platform logging capabilities"
+
+  - company: "City Index Ltd"
+    position: "R&D Team Leader"
+    url: ""
+    startDate: "2008-12"
+    endDate: "2015-03"
+    summary: "Financial spread-betting & CFD market maker. Led R&D team and spearheaded adoption of TDD, Agile practices, open-source software, and public cloud migration."
+    highlights:
+      - "Trained development teams in TDD & Agile programming techniques"
+      - "Led organizational transition to open-source software adoption"
+      - "Spearheaded migration of workloads to public cloud infrastructure"
+
+  - company: "BBC Worldwide"
+    position: "Agile Developer"
+    url: ""
+    startDate: "2008-05"
+    endDate: "2008-10"
+    summary: "Member of Agile Development team building BBC's Kangaroo digital media platform. First exposure to XP, TDD and pair programming methodologies."
+    highlights:
+      - "Contributed to BBC's digital media platform development"
+      - "Learned foundational XP, TDD, and pair programming practices"
+
+  - company: "Lucid Communications"
+    position: "Senior Developer"
+    url: ""
+    startDate: "2003-08"
+    endDate: "2007-04"
+    summary: "Senior development role in communications technology company."
+    highlights: []
+
+  - company: "Vardus Internet Solutions"
+    position: "Developer"
+    url: ""
+    startDate: "2001-01"
+    endDate: "2002-08"
+    summary: "Early career development role in Cape Town-based internet solutions company."
+    highlights: []
+
+volunteer: []
+
+education:
+  - institution: "University of Cape Town"
+    url: ""
+    area: "Information Systems"
+    studyType: "Bachelor of Business Science (Honours)"
+    startDate: "1997-01"
+    endDate: "2000-12"
+    score: "Dean's Merit List"
+    courses:
+      - "Information Systems"
+      - "Statistics"
+    summary: "Majored in Information Systems and Statistics. Active in student council securing internet access for Smuts Hall residence."
+
+awards: []
+
+certificates: []
+
+publications:
+  - name: "Staying up-to-date with Kubernetes"
+    publisher: "Web Publication"
+    releaseDate: ""
+    url: ""
+    summary: "Explorable model for understanding why enterprises fall behind on patching and staying up-to-date with OSS software"
+
+  - name: "SRE & the Vulnerability Budget"
+    publisher: "SRECon AMER"
+    releaseDate: "2019-03"
+    url: ""
+    summary: "Using the Error Budget model to prioritize security patching and feature freshness"
+
+  - name: "Tracker's Journey Through the Cloud"
+    publisher: ""
+    releaseDate: "2017"
+    url: ""
+    summary: "Documentation of pivotaltracker.com migration to GCP with Google SRE collaboration"
+
+skills:
+  - name: "Data Engineering & Visualization"
+    level: "Expert"
+    keywords:
+      - "Python"
+      - "dagster.io"
+      - "Plotly"
+      - "Impala"
+      - "Athena"
+      - "BigQuery"
+
+  - name: "Site Reliability Engineering"
+    level: "Expert"
+    keywords:
+      - "Kubernetes"
+      - "AWS"
+      - "GCP"
+      - "Platform Engineering"
+      - "Error Budgets"
+      - "SLI/SLO Design"
+
+  - name: "Programming Languages"
+    level: "Advanced"
+    keywords:
+      - "Python"
+      - "SQL"
+      - "Golang"
+      - ".NET"
+      - "Ruby"
+
+  - name: "Leadership & Methodology"
+    level: "Expert"
+    keywords:
+      - "Agile"
+      - "XP"
+      - "TDD"
+      - "Team Leadership"
+      - "Cross-functional Collaboration"
+
+  - name: "Personal"
+    level: "Expert"
+    keywords:
+      - "Father"
+      - "Roblox"
+      - "Minecraft"
+      - "Dad-jokes"
+
+languages:
+  - language: "English"
+    fluency: "Native speaker"
+
+interests:
+  - name: "Gaming & Family"
+    keywords:
+      - "Roblox"
+      - "Minecraft"
+      - "Family time"
+
+  - name: "Technology"
+    keywords:
+      - "Open Source"
+      - "Data Engineering"
+      - "Platform Engineering"
+
+references: []
+
+projects:
+  - name: "Data Reliability Engineering Process Upgrades"
+    description: "Senior Data Engineer for Tanzu Portfolio Insights team, responsible for upleveling data reliability engineering and statistical analysis practices"
+    highlights:
+      - "Introduced software engineering processes like testing, CI/CD to R&D telemetry team"
+      - "Pioneered automated data defect detection tooling"
+      - "Implemented OSS data pipeline tools like dagster.io"
+      - "Helped recruit data analysts and introduce Statistical Process Control analysis"
+    keywords:
+      - "Data Engineering"
+      - "dagster.io"
+      - "Statistical Analysis"
+      - "CI/CD"
+    startDate: "2021"
+    endDate: "2022"
+    url: ""
+    roles:
+      - "Senior Data Engineer"
+    entity: "VMware Tanzu"
+    type: "application"
+
+  - name: "Upgrades & Extended Support Portfolio"
+    description: "Engineering Lead in Pivotal's first 'programme balanced leadership team' driving shared outcomes across ~80 R&D teams"
+    highlights:
+      - "Developed data-driven understanding of enterprise customer upgrade challenges"
+      - "Created high-level company outcomes with associated measurements"
+      - "Managed portfolio of teams across 6 R&D offices in North America and Europe"
+      - "Implemented series of strategic bets to improve customer outcomes"
+    keywords:
+      - "Leadership"
+      - "Data-driven Strategy"
+      - "Enterprise"
+      - "Cloud Foundry"
+      - "Kubernetes"
+    startDate: "2018"
+    endDate: "2020"
+    url: ""
+    roles:
+      - "Engineering Lead"
+    entity: "Pivotal Software"
+    type: "management"
+
+  - name: "Migrating pivotaltracker.com to GCP"
+    description: "First EMEA CRE engagement with Google SRE engineers to define multi-level SLIs and error budgets"
+    highlights:
+      - "Collaborated with Google SRE engineers on SLI/SLO design"
+      - "Defined error budgets for Pivotal Tracker on Cloud Foundry/GCP"
+      - "Recruited and mentored Pivotal's SRE teams"
+      - "Successfully migrated high-traffic product management platform"
+    keywords:
+      - "SRE"
+      - "Google Cloud Platform"
+      - "SLI/SLO"
+      - "Error Budgets"
+      - "Migration"
+    startDate: "2017"
+    endDate: "2017"
+    url: ""
+    roles:
+      - "SRE Lead"
+    entity: "Pivotal Software"
+    type: "application"
+
+meta:
+  canonical: ""
+  version: "v1.0.0"
+  lastModified: "2025-07-26"
+  theme: "professional"
