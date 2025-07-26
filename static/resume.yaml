@@ -4,9 +4,9 @@ basics:
   name: "David Laing"
   label: "Senior Staff Data/Reliability Engineer"
   image: ""
-  email: ""
+  email: "david@davidlaing.com"
   phone: ""
-  url: ""
+  url: "https://davidlaing.com"
   summary: "Iterative problem solver & team leader specializing in data reliability engineering and platform SRE. Experienced in building SRE practices, data pipeline engineering, and leading cross-functional teams across global R&D organizations."
   location:
     address: ""
@@ -109,7 +109,7 @@ volunteer: []
 
 education:
   - institution: "University of Cape Town"
-    url: ""
+    url: "https://www.uct.ac.za"
     area: "Information Systems"
     studyType: "Bachelor of Business Science (Honours)"
     startDate: "1997-01"
@@ -273,7 +273,7 @@ projects:
     type: "application"
 
 meta:
-  canonical: ""
+  canonical: "https://davidlaing.com/resume.yaml"
   version: "v1.0.0"
   lastModified: "2025-07-26"
   theme: "professional"
