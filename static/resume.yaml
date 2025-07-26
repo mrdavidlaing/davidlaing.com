@@ -2,18 +2,18 @@ $schema: "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sche
 
 basics:
   name: "David Laing"
-  label: "Senior Staff Data/Reliability Engineer"
+  label: "Staff Engineer"
   image: ""
   email: "david@davidlaing.com"
   phone: ""
   url: "https://davidlaing.com"
   summary: "Iterative problem solver & team leader specializing in data reliability engineering and platform SRE. Experienced in building SRE practices, data pipeline engineering, and leading cross-functional teams across global R&D organizations."
   location:
-    address: ""
+    address: "Dublin, Ireland"
     postalCode: ""
     city: "Dublin"
     countryCode: "IE"
-    region: "Munster"
+    region: "Leinster"
   profiles:
     - network: "GitHub"
       username: "mrdavidlaing"
@@ -23,11 +23,23 @@ basics:
       url: "https://linkedin.com/in/mrdavidlaing"
 
 work:
+  - company: "Mechanical Orchard"
+    position: "Staff Engineer"
+    url: "https://mechanical-orchard.com"
+    startDate: "2023-09"
+    endDate: ""
+    summary: "Platform Engineering team member responsible for building and maintaining cloud infrastructure (GCP/AWS) for Mechanical Orchard's Imogen mainframe modernization platform. Recently evolved into engineering management role for AI Agents, focusing on Kubernetes/Terraform DevOps automation and full-stack web development."
+    highlights:
+      - "Built and maintained cloud infrastructure on GCP and AWS for Imogen modernization platform"
+      - "Engineering manager for AI Agents with focus on Kubernetes and Terraform DevOps automation"
+      - "Developed full-stack web applications using NextJS, React, and TypeScript"
+      - "Contributed to legacy system modernization using behavior-driven transformation methodology"
+
   - company: "Shopify Ltd"
     position: "Senior Staff Reliability Engineer"
     url: ""
     startDate: "2022-05"
-    endDate: ""
+    endDate: "2023-07"
     summary: "Joined to launch Data Reliability Practice for Shopify's Data Platform (PySpark, Trino, GCS). Following platform deprecation, transferred to central SRE team responsible for 'keeping commerce flowing' for 3 million merchants."
     highlights:
       - "Maintained platform reliability during peak traffic of $3.5M/minute during BFCM"
