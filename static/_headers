@@ -1,5 +1,5 @@
-/resume.yaml
+/resume.json
   Access-Control-Allow-Origin: *
 
-/cv.yaml
+/resume.yaml
   Access-Control-Allow-Origin: *

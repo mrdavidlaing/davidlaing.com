@@ -7,7 +7,6 @@ all: build
 # Build the site and create cv.yaml copy
 build:
 	hugo --minify
-	cp public/resume.yaml public/cv.yaml
 
 # Serve development server
 serve:
