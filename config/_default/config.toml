@@ -1,6 +1,6 @@
 baseURL = 'https://davidlaing.com/'
 defaultContentLanguage = "en"
-title = "mrdavidlaing@🌍:~$"
+title = "mrdavidlaing@🌍"
 copyright = "© 1996-2025 David Laing"
 
 # SEO and structured data for LLMs
@@ -27,4 +27,4 @@ section = ["HTML", "RSS"]
 
 [module]
   [[module.imports]]
-    path = "github.com/panr/hugo-theme-terminal/v4"
+    path = "github.com/mrmierzejewski/hugo-theme-console"
