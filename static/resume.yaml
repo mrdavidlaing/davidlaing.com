@@ -23,6 +23,27 @@ basics:
       url: "https://linkedin.com/in/mrdavidlaing"
 
 work:
+  - company: "maketime.ie"
+    position: "Co-founder"
+    url: ""
+    startDate: "2025-03"
+    endDate: ""
+    summary: "Co-founded investment company focused on small business finance applications."
+    highlights:
+      - "Investment and development of small business finance applications"
+      - "Strategic business development and portfolio management"
+
+  - company: "wellmaintained"
+    position: "Founder"
+    url: ""
+    startDate: "2023-08"
+    endDate: ""
+    summary: "Founded online platform development community focused on sustainable software practices and maintainable codebases."
+    highlights:
+      - "Built community platform for developers focused on software maintainability"
+      - "Created and released Decision Copilot, an open-source decision-making tool"
+      - "Fostered community around sustainable development practices"
+
   - company: "Mechanical Orchard"
     position: "Staff Engineer"
     url: "https://mechanical-orchard.com"
