@@ -11,11 +11,8 @@ layout: "single"
 <div style="text-align: center; margin: 2rem auto; max-width: 400px;">
   <img src="/images/mrdavidlaing_bitmoji.png" alt="David Laing Bitmoji" style="width: 200px; height: 200px; border-radius: 50%; margin: 0 auto 1rem auto; display: block;">
   
-  <p style="margin: 1rem 0;">Hi! I'm David Laing; Software Developer; AI Agent Herder; Father and Kite Surfer</p>
+  <p style="margin: 1rem 0;">Hi! I'm David Laing;
+  <br/> Principled Context Engineer, 
+  <br/ >Father and Kite surfer</p>
   
-  <p style="margin: 1rem 0;">
-    <a href="https://github.com/mrdavidlaing">github</a> | 
-    <a href="https://linkedin.com/in/mrdavidlaing">linkedin</a> | 
-    <a href="/resume/">resume/cv</a>
-  </p>
 </div>
