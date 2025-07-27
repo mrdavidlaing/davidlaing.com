@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a personal website built with Hugo static site generator using the Congo theme v2.6.1. The site is configured as a profile-style homepage with dark theme by default.
+This is a personal website built with Hugo static site generator using the Hugo Theme Console. The site is configured as a profile-style homepage featuring a personal introduction, resume/CV, and professional links.
 
 ## Prerequisites
 
@@ -15,15 +15,25 @@ This is a personal website built with Hugo static site generator using the Congo
 
 ### Local Development
 ```bash
-hugo server -D
+make serve
+# OR
+hugo server -D --bind 0.0.0.0
 ```
-Starts development server with drafts enabled, typically on http://localhost:1313
+Starts development server with drafts enabled on all interfaces, typically on http://localhost:1313
 
 ### Building for Production
 ```bash
-hugo
+make build
+# OR
+hugo --minify
 ```
-Generates static files in the `public/` directory
+Generates minified static files in the `public/` directory
+
+### Cleaning Build Artifacts
+```bash
+make clean
+```
+Removes the `public/` directory
 
 ### Creating New Content
 ```bash
@@ -31,42 +41,32 @@ hugo new content/posts/new-post.md
 ```
 Creates new content using the archetype template
 
-## Site Configuration
+## Site Architecture
 
-The site uses Hugo's modular configuration approach with files split across `config/_default/`:
+### Configuration Structure
+The site uses Hugo's modular configuration approach with files in `config/_default/`:
 
-- **config.toml**: Base site configuration (baseURL, language, outputs)
-- **params.toml**: Congo theme parameters (layout, colors, features)
-- **menus.en.toml**: Navigation menu structure
-- **languages.en.toml**: Language-specific settings
-- **module.toml**: Hugo module imports (Congo theme)
-- **markup.toml**: Markdown rendering configuration
+- **config.toml**: Base site configuration including baseURL, outputs, module imports, and SEO metadata
+- **params.toml**: Hugo Theme Console parameters including navigation links and styling options
+- **module.toml**: Hugo module imports for the console theme
 
-## Content Structure
+### Theme Details
+- Uses `github.com/mrmierzejewski/hugo-theme-console` theme (not Congo as mentioned in old docs)
+- Profile-style layout with fade-up animations
+- Console/terminal aesthetic
+- Navigation includes resume/cv, GitHub, and LinkedIn links
 
-- **content/_index.md**: Homepage content (profile layout)
-- **archetypes/default.md**: Template for new content with frontmatter
+### Content Architecture
+- **content/_index.md**: Homepage with centered profile layout, bitmoji image, and social links
+- **content/resume/index.md**: Resume page that displays JSON Resume format and links to external HTML version
+- **static/resume.json**: JSON Resume schema-compliant resume data
+- **archetypes/default.md**: Template for new content with TOML frontmatter
 
-## Theme Configuration
+### Custom Components
+- **layouts/shortcodes/readfile.html**: Custom shortcode that reads and syntax-highlights files (used to display resume.json)
+- **layouts/index.json**: JSON output format for the homepage
 
-The site uses Congo theme with these key settings:
-- Profile homepage layout
-- Ocean color scheme with dark default appearance
-- Auto appearance switching enabled
-- Search and code copy disabled
-- Image lazy loading enabled
-
-## Module Management
-
-The site uses Hugo modules instead of git submodules for theme management. The Congo theme is imported via `module.toml` and managed through `go.mod`.
-
-To update the theme:
-```bash
-hugo mod get -u github.com/jpanther/congo/v2
-hugo mod tidy
-```
-
-## Assets
-
-Static assets are stored in:
-- **assets/images/**: Site images and media files
+### Static Assets
+- **static/images/**: Profile images and media files
+- **static/resume.json**: Resume data in JSON Resume format
+- **static/_headers**: Netlify headers configuration
