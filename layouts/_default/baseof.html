@@ -8,6 +8,45 @@
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta name="author" content="{{ .Site.Params.author | default "David Laing" }}">
+    {{ if .Params.keywords }}
+    <meta name="keywords" content="{{ delimit .Params.keywords ", " }}">
+    {{ else if .Site.Params.keywords }}
+    <meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}">
+    {{ end }}
+    <meta name="robots" content="{{ with .Params.robots }}{{ . }}{{ else }}index,follow{{ end }}">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <!-- JSON-LD Person Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "David Laing",
+      "url": "{{ .Site.BaseURL }}",
+      "jobTitle": "Principled Context Engineer",
+      "image": "{{ "images/mrdavidlaing_bitmoji.png" | absURL }}",
+      "sameAs": [
+        "https://github.com/mrdavidlaing",
+        "https://linkedin.com/in/mrdavidlaing"
+      ]
+    }
+    </script>
+    
+    <!-- Open Graph / Slack / Social Meta -->
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ "images/mrdavidlaing_bitmoji.png" | absURL }}">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+    <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="twitter:image" content="{{ "images/mrdavidlaing_bitmoji.png" | absURL }}">
     
     <!-- Console theme CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/terminal.css@0.7.4/dist/terminal.min.css">

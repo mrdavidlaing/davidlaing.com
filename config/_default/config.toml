@@ -5,8 +5,21 @@ copyright = "© 1996-2025 David Laing"
 
 # SEO and structured data for LLMs
 [params]
-description = "David Laing - Senior Staff Data/Reliability Engineer specializing in platform SRE and data pipeline engineering"
-keywords = ["SRE", "Site Reliability Engineering", "Data Engineering", "Platform Engineering", "Staff Engineer", "David Laing"]
+description = "Principled Context Engineer and Bob Ross of Agentic Coding"
+keywords = [
+  "Principled Context Engineer",
+  "Agentic Coding",
+  "AI Agent Orchestration",
+  "Decision Frameworks",
+  "Platform Engineering",
+  "Data Reliability",
+  "Kubernetes",
+  "Terraform",
+  "GCP",
+  "TypeScript",
+  "Next.js",
+  "Golang"
+]
 author = "David Laing"
 
 enableRobotsTXT = true

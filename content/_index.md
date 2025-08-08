@@ -1,8 +1,19 @@
 ---
-date: 2025-07-26
+date: 2025-08-08
 draft: false
-description: "Senior Staff Data/Reliability Engineer specializing in platform SRE and data pipeline engineering"
-keywords: ["SRE", "Site Reliability Engineering", "Data Engineering", "Platform Engineering", "Staff Engineer", "Shopify", "Dublin Ireland"]
+description: "Principled Context Engineer and Bob Ross of Agentic Coding"
+keywords: [
+  "Principled Context Engineer",
+  "Agentic Coding",
+  "AI Agent Orchestration",
+  "Decision Frameworks",
+  "Platform Engineering",
+  "Data Reliability",
+  "Kubernetes",
+  "Terraform",
+  "TypeScript",
+  "Golang"
+]
 author: "David Laing"
 type: "page"
 layout: "single"
