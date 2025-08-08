@@ -12,7 +12,7 @@ layout: "single"
   <img src="/images/mrdavidlaing_bitmoji.png" alt="David Laing Bitmoji" style="width: 200px; height: 200px; border-radius: 50%; margin: 0 auto 1rem auto; display: block;">
   
   <p style="margin: 1rem 0;">Hi! I'm David Laing;
-  <br/> Principled Context Engineer, 
-  <br/ >Father and Kite surfer</p>
+  <br/> Principled Context Engineer 
+  <br/> and Bob Ross of Agentic Coding</p>
   
 </div>
