@@ -9,5 +9,8 @@ resources/
 node_modules/
 dist/
 
+# Direnv
+.direnv/
+
 #Misc
 tmp/
