@@ -24,6 +24,31 @@ publish-gist:
 	@test -f $(RESUME_FILE) || (echo "❌ File not found: $(RESUME_FILE)" && exit 1)
 	gh gist edit $(GIST_ID) $(RESUME_FILE) --filename resume.json && echo "✅ Successfully published resume.json to Gist!" || (echo "❌ Failed to publish to Gist" && exit 1)
 
+# Generate PDF resume using RenderCV engineering theme (academic/technical CV)
+# Usage: make engineering-pdf [SOURCE=path/to/resume.json] [DEST=output/path.pdf]
+# Defaults: SOURCE=static/resume.json, DEST=static/resume.pdf
+engineering-pdf:
+	$(eval SOURCE ?= static/resume.json)
+	$(eval DEST ?= static/resume.pdf)
+	@echo "📄 Converting JSON Resume to RenderCV YAML format..."
+	@echo "  Source: $(SOURCE)"
+	@echo "  Destination: $(DEST)"
+	@uvx --with pyyaml python scripts/json-to-rendercv.py "$(SOURCE)"
+	@echo "📁 Moving YAML file to static directory..."
+	mv resume.yaml static/resume.yaml
+	@echo "🎨 Generating PDF with RenderCV (engineering theme)..."
+	uvx --from 'rendercv[full]' rendercv render static/resume.yaml --output-folder-name .tmp/rendercv_output
+	@echo "📁 Copying PDF to destination..."
+	cp ".tmp/rendercv_output/David_Laing_CV.pdf" "$(DEST)"
+	@echo "✅ Resume PDF generated successfully at $(DEST)!"
+
+# Clean resume generation artifacts (keeps static/resume.yaml)
+clean-resume:
+	@echo "🧹 Cleaning resume generation artifacts..."
+	rm -f resume.yaml
+	rm -rf .tmp/rendercv_output/
+	@echo "✅ Resume artifacts cleaned! (static/resume.yaml preserved)"
+
 # Build the site
 build:
 	hugo --minify
