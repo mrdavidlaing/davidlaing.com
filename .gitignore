@@ -10,3 +10,6 @@ resources/
 
 #Misc
 tmp/
+
+# Job Applications
+.job_applications/
